@@ -559,6 +559,40 @@ section,
     border-radius: 50%;
     border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
     background: rgba(198, 16, 0, 0);
-    top: -15px;
-    left: -15px;
+    top: -15%;
+    left: -15%;
   }
+
+  /* Criação do triangulo */
+  .pulsating-play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: ;
+  }
+
+  .about .pulsating-play-btn {
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+  }
+
+  @keyframes pulsating-play-btn {
+
+    0% {
+      transform: scale(0.6,0.6);
+      opacity: 1;
+    }
+
+    100%{
+      transform: scale(1,1);
+      opacity: 0;
+    }
+
+  }
+
+  
