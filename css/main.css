@@ -1,3 +1,38 @@
+/* Google Fonts */
+/* Importação de fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+  Poppings:
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  Raleway:
+
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+  Roboto:
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+ 
+*/
+
+:root{
+  --font-padrao: "Roboto", sans-serif;
+  --font-titulo: "Raleway",sans-serif;
+  --font-nav: "poppins",sans-serif;
+}
+
+
 /* Cores para todo os site 
 Global Color */
 
@@ -22,6 +57,17 @@ Global Color */
 body{
     background-color: var(--background-color);
     color: var(--default-color);
+    font-family: var(--font-padrao);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titulo);
+  color: wheat;
 }
 
 a{
@@ -57,7 +103,7 @@ a:hover{
 }
 
 .scrolled .header{
-    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    box-shadow: 0 0 18px rgba(0,0,0,0.1);
     --background-color: rgba(0,0,0,0.85);
 }
 
@@ -277,7 +323,6 @@ a:hover{
   }
   
 
-
 section,
 .section {
     color: var(--default-color);
@@ -449,4 +494,43 @@ section,
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
+  }
+
+  /* Sobre */
+
+  .about .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .about .content ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+
+  .about .content ul i {
+    flex-shrink: 0;
+    font-size: 48px;
+    color: var(--accent-color);
+    margin-right: 20px;
+    line-height: 0;
+  }
+
+  .about .content ul h5 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .about .content ul p {
+    font-size: 15px;
+  }
+
+  .about .content p:last-child {
+    margin-bottom: 0;
   }
