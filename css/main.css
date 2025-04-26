@@ -92,7 +92,7 @@ a:hover{
 
 .header {
     color: var(--default-color);
-    background-color: var(--background-color);
+    background-color: var(--default-color);
     padding: 15px 0;
     transition: all 0.5s ;
     z-index: 997;
@@ -106,7 +106,7 @@ a:hover{
     font-size: 30px;
     margin: 0;
     font-weight: 700;
-    color: var(--heading-color);
+    color: var(--background-color);
 }
 
 .scrolled .header{
@@ -630,13 +630,15 @@ section,
   }
 
   /* Stats = Estaticas */
-  .stats-item{
-    background-color: whitesmoke;
-  }
+  
   .stats .stats-item {
     padding: 30px;
     width: 100%;
     
+  }
+  
+  .stats{
+    background-color: #e3e0e0;
   }
   
   .stats .stats-item i {
