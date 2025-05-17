@@ -334,6 +334,7 @@ section,
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 60px 0;
+    scroll-margin-top: 40px;
 }
 
 /* Global Title */
@@ -372,7 +373,7 @@ section,
 @media (max-width: 1199px) {
   section,
   .section {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 50px;
 
   }
 }
@@ -899,4 +900,6 @@ section,
   font-size: 34px;
   line-height: 0;
 }
+
+
 /* Scroll-top  */
