@@ -768,7 +768,7 @@ section,
   color: #428bca;
    transition: all .2s ease-in-out;
 }
-  /* Xall to Action */
+  /* Call to Action */
 
 .call-to-action {
   padding: 100px 0;
@@ -789,7 +789,51 @@ section,
   z-index: 1;
 }
 
-  /* Scroll-top = Botão de volar ao topo do Site */
+.call-to-action::before{
+  content: "";
+  background: #060606c6;
+  position: absolute;
+  /* Zerar o top left */
+  inset: 0;
+  z-index: 2;
+}
+
+.call-to-action .container{
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3{
+  font-weight: 800;
+  text-shadow: 2px 2px 10px #000000;
+  font-size: 30px;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--font-titulo);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1;
+  display: inline-block;
+  border: 2px solid #e3e0e0;
+  color: #e3e0e0;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: .5s;
+  margin: 10px;
+}
+
+.call-to-action .cta-btn:hover{
+  background-color: #075E54;
+  border: 2px solid #000;
+}
+
+  /* Scroll-top = Botão deb volar ao topo do Site */
 .scroll-top{
   position: fixed;
   background-color: #428bca;
@@ -906,5 +950,12 @@ section,
   opacity: 1;
 }
 
+/* Feedbacks */
 
-/* Scroll-top  */
+.testimonials .testimonial-item {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, .1);
+  padding: 30px;
+  position: relative;
+  height: 100%;
+}
