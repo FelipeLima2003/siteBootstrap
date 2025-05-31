@@ -33,6 +33,7 @@
 
     <!-- CSS Principal -->
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -1336,24 +1337,38 @@
                      <!-- Coluna - 02 -->
                     <div class="col-lg-6">
                         
-                            <form action="" method="post" class="email-form" data-aos="fade-up" data-aos-delay="200">
+                            <form action="https://formspree.io/f/xgvywrkp"method="POST"enctype="multipart/form-data" method="post" class="email-form" data-aos="fade-up" data-aos-delay="200">
+                                
+                                
                                 <div class="row gy-4">
 
                                     <!-- Texto -->
                                   <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Nome Completo" required>
+                                    <input type="text" name="nome" class="form-control" placeholder="Nome Completo *" required>
                                   </div>
 
                                   <!-- Email -->
 
                                    <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Email *" required>
                                   </div>
 
                                   <!-- Assunto -->
 
                                   <div class="col-12">
-                                        <input type="text" name="subject" class="form-control" placeholder="Assunto">
+                                        <input type="text" name="assunto" class="form-control" placeholder="Assunto">
+                                  </div>
+
+                                  <!-- Mensagem -->
+                                  <div class="col-12">
+                                        <textarea class="form-control" name="mensagem" rows="6"
+                                         placeholder="Digite a sua duvida" required></textarea>
+                                  </div>
+
+                                  <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary">
+                                        Enviar
+                                    </button>
                                   </div>
 
                             </div>
